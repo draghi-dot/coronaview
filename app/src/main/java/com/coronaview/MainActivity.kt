@@ -20,9 +20,8 @@ class MainActivity : AppCompatActivity() {
 
         val startButton = findViewById<Button>(R.id.startButton)
 
-
         startButton.setOnClickListener {
-            val intent = Intent(this, StopwatchActivity::class.java).apply {}
+            val intent = Intent(this, StopwatchActivity::class.java)
             startActivity(intent)
         }
     }
